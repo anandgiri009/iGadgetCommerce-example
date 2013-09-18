@@ -17,6 +17,14 @@ match($content_type) {
   # with(/javascript/) {
   #   @import ajax.ts
   # }
+  with(/json/) {
+    match($path) {
+      with(/cart\.php/) {
+        log("Transforming AJAX!!")
+      }
+      else() {}
+    }
+  }
   else() {
     log(concat("Passing through ", $content_type, " unmodified"))
   }
