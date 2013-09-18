@@ -22,18 +22,6 @@ match($status) {
         log("--> Importing pages home.ts in mappings.ts")
         @import pages/home.ts
       }
-      with(/brand/) {
-        log("--> Importing brands.ts in mappings.ts")
-        @import pages/brands.ts
-      }
-      with(/cart/) {
-        log("--> Importing cart.ts in mappings.ts")
-        @import pages/cart.ts
-      }
-      with(/checkout/) {
-        log("--> Importing checkout.ts in mappings.ts")
-        @import pages/checkout.ts
-      }
       with(/sample-product/) {
         log("--> Importing product.ts in mappings.ts")
         @import pages/product.ts
@@ -42,24 +30,25 @@ match($status) {
         log("--> Importing category.ts in mappings.ts")
         @import pages/category.ts
       }
-      with(/holiday-landing-page/) {
-        log("--> Importing landing.ts in mappings.ts")
-        @import pages/landing.ts
-      }
       else() {
+        $imported = "false"
         $("//div[@id='ProductDetails']/ancestor::html") {
           log("--> Importing product.ts - mapping on content")
           @import pages/product.ts
+          $imported = "true"
         }
-        log("--> No page match in mappings.ts")
+        match($imported, "false") {
+          log("--> No page match in mappings.ts, it's out of scope.")
+          @import pages/out_of_scope.ts
+        }
       }
     }   
   }
 
   else() {
     # not 200 or 302 response status
-    log("--> STATUS: " + $status + " assuming its an error code pages/error.ts")
-    @import pages/error.ts
+    log("--> STATUS: " + $status + " assuming its an error or out of scope.")
+    @import pages/out_of_scope.ts
   }
 
 }
