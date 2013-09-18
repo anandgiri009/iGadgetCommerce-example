@@ -4,19 +4,19 @@
   Mappings are matchers that we use to determine if we should execute a
   bit of Tritium during an execution. Aka, run something when we are
   are on a certain page.
-
-  Example starting code:
 */
 
 match($status) {
 
+  # Let redirects pass through.
   with(/302/) {
-    log("--> STATUS: 302") # redirect: just let it go through
+    log("--> STATUS: 302") 
   }
 
   with(/200/) {
     log("--> STATUS: 200")
 
+    # Matching the path of the URL against certain regular expressions.
     match($path) {
       with(/^\/$|^\/\?/) {
         log("--> Importing pages home.ts in mappings.ts")
@@ -31,6 +31,7 @@ match($status) {
         @import pages/category.ts
       }
       else() {
+        # Advanced matching on content
         $imported = "false"
         $("//div[@id='ProductDetails']/ancestor::html") {
           log("--> Importing product.ts - mapping on content")
@@ -45,10 +46,9 @@ match($status) {
     }   
   }
 
+  # Not 200 or 302 response status
   else() {
-    # not 200 or 302 response status
     log("--> STATUS: " + $status + " assuming its an error or out of scope.")
     @import pages/out_of_scope.ts
   }
-
 }
