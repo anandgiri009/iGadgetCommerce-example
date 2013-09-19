@@ -31,17 +31,8 @@ match($status) {
         @import pages/category.ts
       }
       else() {
-        # Advanced matching on content
-        $imported = "false"
-        $("//div[@id='ProductDetails']/ancestor::html") {
-          log("--> Importing product.ts - mapping on content")
-          @import pages/product.ts
-          $imported = "true"
-        }
-        match($imported, "false") {
-          log("--> No page match in mappings.ts, it's out of scope.")
-          @import pages/out_of_scope.ts
-        }
+        log("--> No page match in mappings.ts, it's out of scope.")
+        @import pages/out_of_scope.ts
       }
     }   
   }
