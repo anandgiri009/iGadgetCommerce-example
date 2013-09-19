@@ -25,14 +25,14 @@
         }
         .First {
           a {
-            @extend .buttons-user;
+            @extend .sprites-user;
             display: block;
             text-indent: -9999px;
           }
         }
         .CartLink {
           a {
-            @extend .buttons-cart;
+            @extend .sprites-cart;
             display: block;
             text-indent: -9999px;
             span{
@@ -92,31 +92,19 @@
       width: 60px;
       height: 33px;
       // background: image-url("menu.png") no-repeat 0 0;
-      @extend .buttons-menu;
+      @extend .sprites-menu;
       text-indent: -9999px;
       &[data-ur-state="enabled"] span{
         // background: image-url("menu-on.png") no-repeat 0 0;
-        @extend .buttons-menu-on;
+        @extend .sprites-menu-on;
       }
     }
   }
   #Menu{
     ul{
       padding: 2px 0 0;
-      background-color: #F5F2E1;
+      background-color: $background7;
       @include clearfix();
-      li{
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid #C0BCA3;
-        a{
-          display: block;
-          padding: 11px 10px 10px;
-          color: #3D211A;
-          text-shadow: 1px 1px 0px white;
-          background: image-url("menu_go.png") no-repeat 95% center;
-        }
-      }
     }
     #SideCategoryList{
       h2{

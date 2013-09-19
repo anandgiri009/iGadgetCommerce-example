@@ -113,6 +113,23 @@
     padding: $spacing;
   }
 }
+@mixin bar2 {
+  @include bar_inner_base;
+  background-color: $background7;
+  width: 100%;
+  border-bottom: $border5;
+  padding: 0;
+  font-size: $font_size;
+  a{
+    display: block;
+    padding: 11px 10px 10px;
+    color: $text_color;
+    background: image-url("menu_go.png") no-repeat 95% center;
+  }
+}
 .mw_bar1 {
   @include bar1;
+}
+.mw_bar2 {
+  @include bar2;
 }

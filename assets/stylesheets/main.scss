@@ -9,7 +9,6 @@
 @import "globals/_lib";
 @import "globals/_base";
 @import "globals/_uranium";
-@import "globals/_buttons";
 @import "globals/_sprites";
 
 // Header & Footer
@@ -20,4 +19,5 @@
 @import "pages/_home";
 @import "pages/_category";
 @import "pages/_product";
+@import "pages/_cart_modal.scss";
 @import "pages/_out_of_scope.scss";

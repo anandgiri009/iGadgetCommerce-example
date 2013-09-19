@@ -1,208 +1,429 @@
 $sprites-url: url("/_moovweb_local_assets_/images/sprites.png");
 
 $sprites-width: 300px;
-$sprites-height: 744px;
+$sprites-height: 1173px;
+
+$sprites-AddCartButton-x: 0px;
+$sprites-AddCartButton-y: 0px;
+$sprites-AddCartButton-width: 126px;
+$sprites-AddCartButton-height: 30px;
+
+$sprites-MultippleAddresses-x: 0px;
+$sprites-MultippleAddresses-y: -31px;
+$sprites-MultippleAddresses-width: 213px;
+$sprites-MultippleAddresses-height: 30px;
+
+$sprites-ProceedToCheckout-x: 0px;
+$sprites-ProceedToCheckout-y: -62px;
+$sprites-ProceedToCheckout-width: 140px;
+$sprites-ProceedToCheckout-height: 30px;
+
+$sprites-ProceedToPayment-x: 0px;
+$sprites-ProceedToPayment-y: -93px;
+$sprites-ProceedToPayment-width: 139px;
+$sprites-ProceedToPayment-height: 30px;
+
+$sprites-SaveReview-x: 0px;
+$sprites-SaveReview-y: -124px;
+$sprites-SaveReview-width: 126px;
+$sprites-SaveReview-height: 30px;
+
+$sprites-UpdateQuanity-x: 0px;
+$sprites-UpdateQuanity-y: -155px;
+$sprites-UpdateQuanity-width: 126px;
+$sprites-UpdateQuanity-height: 30px;
+
+$sprites-WriteReview-x: 0px;
+$sprites-WriteReview-y: -186px;
+$sprites-WriteReview-width: 126px;
+$sprites-WriteReview-height: 30px;
+
+$sprites-back-x: 0px;
+$sprites-back-y: -217px;
+$sprites-back-width: 43px;
+$sprites-back-height: 32px;
 
 $sprites-breadcrumb-x: 0px;
-$sprites-breadcrumb-y: 0px;
+$sprites-breadcrumb-y: -250px;
 $sprites-breadcrumb-width: 5px;
 $sprites-breadcrumb-height: 8px;
 
 $sprites-btn_bg-x: 0px;
-$sprites-btn_bg-y: -9px;
+$sprites-btn_bg-y: -259px;
 $sprites-btn_bg-width: 2px;
 $sprites-btn_bg-height: 2px;
 
+$sprites-cart-x: 0px;
+$sprites-cart-y: -262px;
+$sprites-cart-width: 44px;
+$sprites-cart-height: 39px;
+
 $sprites-content_top-x: 0px;
-$sprites-content_top-y: -12px;
+$sprites-content_top-y: -302px;
 $sprites-content_top-width: 3px;
 $sprites-content_top-height: 36px;
 
 $sprites-form_bg-x: 0px;
-$sprites-form_bg-y: -49px;
+$sprites-form_bg-y: -339px;
 $sprites-form_bg-width: 179px;
 $sprites-form_bg-height: 33px;
 
+$sprites-go_btn-x: 0px;
+$sprites-go_btn-y: -373px;
+$sprites-go_btn-width: 41px;
+$sprites-go_btn-height: 30px;
+
 $sprites-gplus-x: 0px;
-$sprites-gplus-y: -83px;
+$sprites-gplus-y: -404px;
 $sprites-gplus-width: 256px;
 $sprites-gplus-height: 256px;
 
+$sprites-menu-on-x: 0px;
+$sprites-menu-on-y: -661px;
+$sprites-menu-on-width: 60px;
+$sprites-menu-on-height: 33px;
+
+$sprites-menu-x: 0px;
+$sprites-menu-y: -695px;
+$sprites-menu-width: 60px;
+$sprites-menu-height: 33px;
+
 $sprites-menu_go-x: 0px;
-$sprites-menu_go-y: -340px;
+$sprites-menu_go-y: -729px;
 $sprites-menu_go-width: 9px;
 $sprites-menu_go-height: 13px;
 
 $sprites-minus-x: 0px;
-$sprites-minus-y: -354px;
+$sprites-minus-y: -743px;
 $sprites-minus-width: 13px;
 $sprites-minus-height: 13px;
 
 $sprites-moovweb-x: 0px;
-$sprites-moovweb-y: -368px;
+$sprites-moovweb-y: -757px;
 $sprites-moovweb-width: 90px;
 $sprites-moovweb-height: 11px;
 
 $sprites-ok-x: 0px;
-$sprites-ok-y: -380px;
+$sprites-ok-y: -769px;
 $sprites-ok-width: 15px;
 $sprites-ok-height: 15px;
 
 $sprites-plus-x: 0px;
-$sprites-plus-y: -396px;
+$sprites-plus-y: -785px;
 $sprites-plus-width: 13px;
 $sprites-plus-height: 13px;
 
 $sprites-search-x: 0px;
-$sprites-search-y: -410px;
+$sprites-search-y: -799px;
 $sprites-search-width: 40px;
 $sprites-search-height: 33px;
 
 $sprites-twitter-x: 0px;
-$sprites-twitter-y: -444px;
+$sprites-twitter-y: -833px;
 $sprites-twitter-width: 300px;
 $sprites-twitter-height: 300px;
 
-@mixin sprites-breadcrumb() {
+$sprites-user-x: 0px;
+$sprites-user-y: -1134px;
+$sprites-user-width: 44px;
+$sprites-user-height: 39px;
+
+@mixin sprites-AddCartButton() {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px 0px;
+  width: 126px;
+  height: 30px;
+}
+
+@mixin sprites-MultippleAddresses() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -31px;
+  width: 213px;
+  height: 30px;
+}
+
+@mixin sprites-ProceedToCheckout() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -62px;
+  width: 140px;
+  height: 30px;
+}
+
+@mixin sprites-ProceedToPayment() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -93px;
+  width: 139px;
+  height: 30px;
+}
+
+@mixin sprites-SaveReview() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -124px;
+  width: 126px;
+  height: 30px;
+}
+
+@mixin sprites-UpdateQuanity() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -155px;
+  width: 126px;
+  height: 30px;
+}
+
+@mixin sprites-WriteReview() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -186px;
+  width: 126px;
+  height: 30px;
+}
+
+@mixin sprites-back() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -217px;
+  width: 43px;
+  height: 32px;
+}
+
+@mixin sprites-breadcrumb() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -250px;
   width: 5px;
   height: 8px;
 }
 
 @mixin sprites-btn_bg() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -9px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -259px;
   width: 2px;
   height: 2px;
 }
 
+@mixin sprites-cart() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -262px;
+  width: 44px;
+  height: 39px;
+}
+
 @mixin sprites-content_top() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -12px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -302px;
   width: 3px;
   height: 36px;
 }
 
 @mixin sprites-form_bg() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -49px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -339px;
   width: 179px;
   height: 33px;
 }
 
+@mixin sprites-go_btn() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -373px;
+  width: 41px;
+  height: 30px;
+}
+
 @mixin sprites-gplus() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -83px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -404px;
   width: 256px;
   height: 256px;
 }
 
+@mixin sprites-menu-on() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -661px;
+  width: 60px;
+  height: 33px;
+}
+
+@mixin sprites-menu() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -695px;
+  width: 60px;
+  height: 33px;
+}
+
 @mixin sprites-menu_go() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -340px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -729px;
   width: 9px;
   height: 13px;
 }
 
 @mixin sprites-minus() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -354px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -743px;
   width: 13px;
   height: 13px;
 }
 
 @mixin sprites-moovweb() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -368px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -757px;
   width: 90px;
   height: 11px;
 }
 
 @mixin sprites-ok() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -380px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -769px;
   width: 15px;
   height: 15px;
 }
 
 @mixin sprites-plus() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -396px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -785px;
   width: 13px;
   height: 13px;
 }
 
 @mixin sprites-search() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -410px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -799px;
   width: 40px;
   height: 33px;
 }
 
 @mixin sprites-twitter() {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -444px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -833px;
   width: 300px;
   height: 300px;
 }
 
-.sprites-breadcrumb {
+@mixin sprites-user() {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -1134px;
+  width: 44px;
+  height: 39px;
+}
+
+.sprites-AddCartButton {
   background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px 0px;
+  width: 126px;
+  height: 30px;
+}
+
+.sprites-MultippleAddresses {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -31px;
+  width: 213px;
+  height: 30px;
+}
+
+.sprites-ProceedToCheckout {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -62px;
+  width: 140px;
+  height: 30px;
+}
+
+.sprites-ProceedToPayment {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -93px;
+  width: 139px;
+  height: 30px;
+}
+
+.sprites-SaveReview {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -124px;
+  width: 126px;
+  height: 30px;
+}
+
+.sprites-UpdateQuanity {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -155px;
+  width: 126px;
+  height: 30px;
+}
+
+.sprites-WriteReview {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -186px;
+  width: 126px;
+  height: 30px;
+}
+
+.sprites-back {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -217px;
+  width: 43px;
+  height: 32px;
+}
+
+.sprites-breadcrumb {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -250px;
   width: 5px;
   height: 8px;
 }
 
 .sprites-btn_bg {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -9px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -259px;
   width: 2px;
   height: 2px;
 }
 
+.sprites-cart {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -262px;
+  width: 44px;
+  height: 39px;
+}
+
 .sprites-content_top {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -12px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -302px;
   width: 3px;
   height: 36px;
 }
 
 .sprites-form_bg {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -49px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -339px;
   width: 179px;
   height: 33px;
 }
 
+.sprites-go_btn {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -373px;
+  width: 41px;
+  height: 30px;
+}
+
 .sprites-gplus {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -83px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -404px;
   width: 256px;
   height: 256px;
 }
 
+.sprites-menu-on {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -661px;
+  width: 60px;
+  height: 33px;
+}
+
+.sprites-menu {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -695px;
+  width: 60px;
+  height: 33px;
+}
+
 .sprites-menu_go {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -340px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -729px;
   width: 9px;
   height: 13px;
 }
 
 .sprites-minus {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -354px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -743px;
   width: 13px;
   height: 13px;
 }
 
 .sprites-moovweb {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -368px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -757px;
   width: 90px;
   height: 11px;
 }
 
 .sprites-ok {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -380px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -769px;
   width: 15px;
   height: 15px;
 }
 
 .sprites-plus {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -396px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -785px;
   width: 13px;
   height: 13px;
 }
 
 .sprites-search {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -410px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -799px;
   width: 40px;
   height: 33px;
 }
 
 .sprites-twitter {
-  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -444px;
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -833px;
   width: 300px;
   height: 300px;
+}
+
+.sprites-user {
+  background: url("/_moovweb_local_assets_/images/sprites.png") no-repeat 0px -1134px;
+  width: 44px;
+  height: 39px;
 }

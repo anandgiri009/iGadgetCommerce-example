@@ -9,7 +9,8 @@ $color4: white;
 $color5: #075899; // blue 
 $color6: #C7D7DB; // blue gray
 $color7: #606263; // darker gray
-$color8: #D74401; //header border color
+$color8: #D74401; // header border
+$color9: #C0BCA3; 
 
 // background colors
 $background1: #FCF5AA;
@@ -18,6 +19,7 @@ $background3: #e7ebf0;
 $background4: #fff;
 $background5: #C14102; // header background top
 $background6: #852201; //header background bottom
+$background7: #F5F2E1; // tan bar 
 
 // fonts
 $font_size: 13px;
@@ -35,6 +37,7 @@ $border1: 1px solid shade($color1, 60%);
 $border2: 1px solid #CDCDCD;
 $border3: 1px solid shade($color3, 50%);
 $border4: 1px solid $color8;
+$border5: 1px solid $color9;
 
 // gradients
 $grad1: linear-gradient($color1 0, shade($color1, 40%) 100%);

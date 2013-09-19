@@ -25,7 +25,7 @@ $('./body') {
             remove("./label")
             # Change search button background image
             $("./input[@type='image']") {
-              wrap("div", class: "mw_search_btn buttons-search")
+              wrap("div", class: "mw_search_btn sprites-search")
             }
             $("./input[@type='text']") {
               attribute("placeholder", "Search…")
@@ -41,6 +41,9 @@ $('./body') {
       attribute("data-ur-toggler-component", "content")
       # Move "Category List" element on bottom of #Menu element
       move_here("../../div[@id='Wrapper']/div[@class='Left']/div[@id='SideCategoryList']", "bottom")
+      $$("li") {
+        add_class("mw_bar2")
+      }
     }
   }
 }
