@@ -4,15 +4,49 @@
     .Left{
     display: none;
   }
-  
   .Clear{
     display: none;
   }
-
   .mw_banner {
     padding: 5px 10px;
     text-align: center;
     color: white;
       background: #C92500;
+  }
+  h2 {
+    text-align: center;
+    font-size: $h2_size; 
+  }
+  #HomeFeaturedProducts, #HomeNewProducts {
+    position: relative;
+    margin-bottom: 10px;
+    [data-ur-carousel-button-type="next"], [data-ur-carousel-button-type="prev"] {
+      position: absolute;
+      top: 0;
+      margin-top: -10px;
+      padding: 120px 15px;
+      background: white;
+    }
+    [data-ur-carousel-component="scroll_container"] {
+      padding: 0 15px 15px 15px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      li {
+        padding: 10px;
+        width: 150px;
+      }
+    }
+    .mw_dots {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -18px;
+      margin-bottom: 10px;
+    }
+    &#HomeNewProducts {
+      .mw_dots {
+        margin-left: -48px;
+      }
+    }
   }
 }
