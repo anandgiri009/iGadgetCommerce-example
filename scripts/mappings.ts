@@ -16,7 +16,7 @@ match($status) {
 
   with(/200/) {
     log("--> STATUS: 200")
-
+    # Matching the path of the URL against certain regular expressions.
     match($path) {
       with(/^\/$|^\/\?/) {
         log("--> Importing pages home.ts in mappings.ts")
@@ -47,6 +47,7 @@ match($status) {
         @import pages/landing.ts
       }
       else() {
+        # Advanced matching on content
         $imported = "false"
         $("//div[@id='ProductDetails']/ancestor::html") {
           log("--> Importing product.ts - mapping on content")
