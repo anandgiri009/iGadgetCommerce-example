@@ -34,6 +34,22 @@
       li {
         padding: 10px;
         width: 150px;
+        > div {
+          margin: 3px;
+        }
+        a {
+          color: $text_color;
+          font-weight: normal;
+        }
+        .ProductImage {
+          height: 140px;
+        }
+        .ProductDetails {
+          height: 26px;
+        }
+        .ProductActionAdd {
+          @include btn1;
+        }
       }
     }
     .mw_dots {
