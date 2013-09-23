@@ -1,5 +1,5 @@
 $("./body") {
-  add_class("mw_iphone")
+  add_class("mw_category")
   
   $("./div[@id='Container']") {
         

@@ -53,10 +53,13 @@ hr {
   border: 0;
 }
 
+[mw_class='hide']{
+  display: none;
+}
+
 // Main container
 #Container{
   width: 100%;
-  @include clearfix();
   #AjaxLoading {
     display: none;
     text-align: center;
@@ -163,8 +166,4 @@ hr {
       display: none;
     }
   }
-}
-
-[mw_class='hide']{
-  display: none;
 }
