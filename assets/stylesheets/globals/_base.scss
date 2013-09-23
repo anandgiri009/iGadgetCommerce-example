@@ -53,10 +53,13 @@ hr {
   border: 0;
 }
 
+[mw_class='hide']{
+  display: none;
+}
+
 // Main container
 #Container{
   width: 100%;
-  @include clearfix();
   #AjaxLoading {
     display: none;
     text-align: center;
@@ -336,11 +339,11 @@ hr {
       font-weight: bold;
     }
   }
-  .Odd, .Even {
-    width: auto !important;
-    height: auto !important;
-    background-color: $color4 !important;
-  }
+//  .Odd, .Even {
+//    width: auto !important;
+//    height: auto !important;
+//    background-color: $color4 !important;
+//  }
 }
 .mw-testing {
   color: purple;
@@ -349,3 +352,4 @@ hr {
   padding: 10px;
   border: 5px solid purple;
 }
+
