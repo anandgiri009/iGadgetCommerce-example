@@ -62,21 +62,6 @@ hr {
   width: 100%;
   #AjaxLoading {
     display: none;
-    text-align: center;
-    background: $background1;
-    width: 100%;
-    z-index: 999 !important;
-    padding: 130px 10px;
-    left: 0 !important;
-    border-bottom: 2px solid #6a1800;
-    height: 250px;
-    font-size: 15px;
-    font-weight: bold;
-    img {
-      vertical-align: bottom;
-      display: block;
-      margin: 10px auto;
-    }
   }
   #Wrapper {
     .Content{
@@ -86,8 +71,7 @@ hr {
       h3 {
         margin-bottom: 5px;
       }
-      .QuickViewBtn, .BrandList, .NewsletterSubscription, .CompareButton, .FeedLink,
-      #CategoryBreadcrumb,  .Breadcrumb, .AddThisButtonBox{
+      .QuickViewBtn, .BrandList, .NewsletterSubscription, .CompareButton, .FeedLink, #CategoryBreadcrumb,  .Breadcrumb, .AddThisButtonBox{
         display: none !important;
       }
     }
@@ -100,7 +84,6 @@ hr {
   }
   .Block{
     margin-bottom: 5px;
-    @include clearfix();
   }
 }
 
@@ -136,7 +119,6 @@ hr {
         }
       }
     }
-
     .ProductPriceRating{
       height: auto !important;
       em {

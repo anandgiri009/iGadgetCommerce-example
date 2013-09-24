@@ -1,4 +1,22 @@
 // Add to Cart Page served via Ajax
+#AjaxLoading {
+  display: none;
+  text-align: center;
+  background: $background1;
+  width: 100%;
+  z-index: 999 !important;
+  padding: 130px 10px;
+  left: 0 !important;
+  border-bottom: 2px solid #6a1800;
+  height: 250px;
+  font-size: 15px;
+  font-weight: bold;
+  img {
+    vertical-align: bottom;
+    display: block;
+    margin: 10px auto;
+  }
+}
 #ModalOverlay {
   background-color: black;
 }
