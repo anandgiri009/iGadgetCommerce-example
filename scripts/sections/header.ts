@@ -1,4 +1,5 @@
 $('./body') {
+  add_class("mw_header")
   $(".//div[@id='Header']") {
     attribute("data-ur-set", "toggler")
     
@@ -35,6 +36,7 @@ $('./body') {
       }
     }   
     remove("./br")
+    
     # Move menu items into header
     move_here("../div[@id='Menu']", "bottom"){
       attribute("data-ur-toggler-component", "content")
