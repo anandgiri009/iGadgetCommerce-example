@@ -1,26 +1,26 @@
-body._product {
-  h2 {
-    font-weight: bold;
-    font-size: 21px;
-  }
-  h3 {
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .ProductMain {
-    border: $border2;
-    overflow: hidden;
-    padding: 10px;
-    background: $background2;
-    line-height: 24px;
-    .Label {
-      float: left;
-    }
-    .AddCartButton {
-      input[type="image"] {
-        margin-top: 10px;
-        float: left;
-      }
-    }
-  }
-}
+// body._product {
+//   h2 {
+//     font-weight: bold;
+//     font-size: 21px;
+//   }
+//   h3 {
+//     font-weight: bold;
+//     font-size: 18px;
+//   }
+//   .ProductMain {
+//     border: $border2;
+//     overflow: hidden;
+//     padding: 10px;
+//     background: $background2;
+//     line-height: 24px;
+//     .Label {
+//       float: left;
+//     }
+//     .AddCartButton {
+//       input[type="image"] {
+//         margin-top: 10px;
+//         float: left;
+//       }
+//     }
+//   }
+// }
