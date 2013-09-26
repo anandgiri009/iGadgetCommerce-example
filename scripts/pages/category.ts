@@ -7,6 +7,16 @@ $("./body") {
         $("./div[@class='Left']") {
 
           # Create Togglers
+          $("./div[@id='SideCategoryShopByPrice']") {
+            attribute("data-ur-set", "toggler")
+            $("./h2") {
+              attribute("data-ur-toggler-component", "button")
+              insert("div", class: "mw_indicator")
+            }
+            $("./div") {
+              attribute("data-ur-toggler-component", "content")
+            }           
+          }
           $("./div[@id='SideShopByBrand']") {
             attribute("data-ur-set", "toggler")
             $("./h2") {
