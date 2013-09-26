@@ -23,7 +23,7 @@
       border: 1px solid #5f0f02;
       font-weight: bold;
       padding: 12px 3px 9px 10px;
-      margin: 0;
+      margin: 5px;
       color: $background4;
       background: image-url("ok.png") no-repeat 95% center #812600;
       //@extend .sprites-ok;
@@ -48,11 +48,21 @@
     background: image-url("content_top.png") repeat-x 0 0;
     padding-top: 20px;
     > h2{
-      margin-bottom: 15px;
+      padding: 5px;
+      font-size: 19px;
     }
     .ShopByPrice, .BrandList {
+      margin: 5px;
+      min-height: 43px;
       h2 {
         background: #812600;
+        height: 20px;
+        border: 1px solid #5f0f02;
+        font-size: 14px;
+        padding: 14px 10px 7px;
+        margin: 0;
+        color: $background4;
+        border-radius: $border_radius;
         &:before {
           margin-top: -7px;
           margin-left: -20px;
@@ -64,12 +74,6 @@
           float: right;
 
         }
-        border: 1px solid #5f0f02;
-        font-size: 14px;
-        padding: 11px 10px 10px;
-        margin: 0;
-        color: $background4;
-        border-radius: $border_radius;
         &[data-ur-state="disabled"]{
           > .mw_indicator {
             @extend .sprites-plus;
