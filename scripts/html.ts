@@ -9,14 +9,14 @@ $("/html") {
   clean_mobile_meta_tags()
     
   # Remove styles and comments
-  # remove_all_styles()
+  remove_all_styles()
   remove_html_comments()
 
   # Late load all the images on the site
   # lateload()
 
   # Add our images, javascript, and stylesheets
-  # add_assets()
+  add_assets()
 
   # Import header and footer transformations on every page
   @import sections/header.ts

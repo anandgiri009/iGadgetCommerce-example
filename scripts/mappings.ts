@@ -32,7 +32,7 @@ match($status) {
       }
       else() {
         log("--> No page match in mappings.ts, it's out of scope.")
-        # @import pages/out_of_scope.ts
+        @import pages/out_of_scope.ts
       }
     }   
   }
