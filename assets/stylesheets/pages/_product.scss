@@ -1,4 +1,41 @@
 body._product {
+  #Wrapper {
+    padding: 10px;
+    .AddThisButtonBox {
+      display: none;
+    }
+    #ProductByCategory {
+      display: none;
+    }
+    .ProductMain {
+      border: $border2;
+      overflow: hidden;
+      padding: 10px;
+      background: $background2;
+      line-height: 24px;
+      .Label {
+        float: left;
+      }
+      .AddCartButton {
+        input[type="image"] {
+          display: none;
+        }
+        .mw_btn1 {
+          margin-top: 10px;
+        }
+      }
+    }
+    #ProductDescription {
+      ul {
+        margin-top: 5px;
+        list-style-type: disc;
+        li {
+          list-style-type: disc;
+          margin-left: 35px;
+        }
+      }
+    }
+  }
   h2 {
     font-weight: bold;
     font-size: 21px;
@@ -6,21 +43,6 @@ body._product {
   h3 {
     font-weight: bold;
     font-size: 18px;
-  }
-  .ProductMain {
-    border: $border2;
-    overflow: hidden;
-    padding: 10px;
-    background: $background2;
-    line-height: 24px;
-    .Label {
-      float: left;
-    }
-    .AddCartButton {
-      input[type="image"] {
-        margin-top: 10px;
-        float: left;
-      }
-    }
+    margin-bottom: 5px;
   }
 }
