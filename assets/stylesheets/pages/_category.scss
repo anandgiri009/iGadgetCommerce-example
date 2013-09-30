@@ -1,4 +1,10 @@
 .mw_category{
+  #Wrapper {
+    padding: 10px;
+    .FeedLink {
+      display: none;
+    }
+  }
   .Content{
     background: none;
     padding-top: 0;
@@ -18,14 +24,17 @@
         }
       }
     }
+    #CategoryBreadcrumb, .CompareButton {
+      display: none;
+    }
     .SortBox{
       background: #812600;
       border: 1px solid #5f0f02;
       font-weight: bold;
       padding: 12px 3px 9px 10px;
-      margin: 0;
+      margin: 5px 0 20px 0;
       color: $background4;
-      background: image-url("ok.png") no-repeat 95% center #812600;
+      // background: image-url("ok.png") no-repeat 95% center #812600;
       //@extend .sprites-ok;
       border-radius: $border_radius;
       select{
@@ -45,14 +54,16 @@
     }
   }
   .Left{
-    background: image-url("content_top.png") repeat-x 0 0;
-    padding-top: 20px;
+    // background: image-url("content_top.png") repeat-x 0 0;
     > h2{
-      margin-bottom: 15px;
+      margin-bottom: 11px;
+      font-size: $h2_size;
     }
     .ShopByPrice, .BrandList {
+      margin: 5px 0;
       h2 {
         background: #812600;
+        padding: 5px;
         &:before {
           margin-top: -7px;
           margin-left: -20px;
@@ -66,7 +77,7 @@
         }
         border: 1px solid #5f0f02;
         font-size: 14px;
-        padding: 11px 10px 10px;
+        padding: 14px 10px 13px;
         margin: 0;
         color: $background4;
         border-radius: $border_radius;
@@ -112,6 +123,23 @@
             }
           }         
         }       
+      }
+    }
+  }
+  .Right {
+    .TopSellerNumber {
+      display: none;
+    }
+    #SideCategoryTopSellers {
+      h2 {
+        margin: 0 0 5px;
+        font-size: $h2_size;
+      }
+    }
+    #SideCategoryNewProducts, #SideCategoryPopularProducts {
+      h2 {
+        margin: 20px 0 5px;
+        font-size: $h2_size;
       }
     }
   }
