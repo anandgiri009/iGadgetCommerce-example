@@ -30,8 +30,19 @@
             "^"+%value+"\\s|"+
             "\\s"+%value+"\\s|"+
             "\\s"+%value+"$"
-  log(%regexp)
   match_not(%class, regexp(%regexp)) {
     warn("This node does not have the class: "+%value)
   }
 }
+
+@func XMLNode.must_equal(Text %a, Text %b) {
+  match_not(%a, %b) {
+    warn("Input value: "+%a+" does not equal: "+%b)
+  }
+}
+
+# must equal
+# must come after
+# or must be in position? could use must_$ with xpath tricks to do this...
+# i.e. following sibling, etc. 
+
