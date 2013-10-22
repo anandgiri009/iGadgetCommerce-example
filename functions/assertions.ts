@@ -40,9 +40,3 @@
     warn("Input value: "+%a+" does not equal: "+%b)
   }
 }
-
-# must equal
-# must come after
-# or must be in position? could use must_$ with xpath tricks to do this...
-# i.e. following sibling, etc. 
-
