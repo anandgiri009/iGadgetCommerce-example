@@ -3,7 +3,7 @@ $("./body") {
 
   # Notice this is broken on mlocal.mstage.igadgetcommerce.com
   # Creating Image Carousels
-  must_$("//*[@id='HomeFeaturedProducts'] | //*[@id='HomeNewProducts']") {
+  $("//*[@id='HomeFeaturedProducts'] | //*[@id='HomeNewProducts']") {
     ur_carousel("..//li[contains(@class, 'Odd') or contains(@class, 'Even')]")
     remove(css(".BlockContent"))
     attribute("data-ur-center", "disabled")
@@ -11,10 +11,10 @@ $("./body") {
     attribute("data-ur-touch", "enabled")
   }
 
-  log("Failure Count: " + $ASSERTION_FAILURE_COUNT)
-  log("Failure Messages: " + $ASSERTION_FAILURE_MESSAGES)
-
   # Remove unnecessary content
   remove(".//span[contains(@class, 'FeedLink')]")
   remove(".//div[@id='LayoutColumn3']")
 }
+
+# Import my assertions for the home page
+@import ../asserts/home.ts

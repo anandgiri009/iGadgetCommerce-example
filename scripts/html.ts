@@ -24,5 +24,9 @@ $("/html") {
 
   # Determine the Tritium applied to certain types of pages using the path in the URL.
   @import mappings.ts
+
+  # Log assertion failures
+  log("Failure Count: " + $ASSERTION_FAILURE_COUNT)
+  log("Failure Messages: " + $ASSERTION_FAILURE_MESSAGES)
 }
 
