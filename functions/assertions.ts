@@ -34,7 +34,7 @@
   }
 }
 
-@func XMLNode.must_equal(Text %a, Text %b) {
+@func XMLNode.must_match(Text %a, Text %b) {
   match_not(%a, %b) {
     warn("Input value: "+%a+" does not equal: "+%b)
   }
