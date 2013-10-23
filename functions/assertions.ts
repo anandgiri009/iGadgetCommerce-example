@@ -23,7 +23,6 @@
   }
 }
 
-# This isn't quite right but you get what it should do
 @func XMLNode.has_class(Text %value) {
   %class = fetch("@class")
   %regexp = "^"+%value+"$|"+
