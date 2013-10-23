@@ -1,10 +1,10 @@
 # Homepage Assertions
 
-# If this element exists the new desktop page will break
-must_not_$(css("#HomeFeaturedProducts"))
-
-must_$("//*[@id='HomeNewProducts']") {
+must_$("//*[@id='HomeNewProducts'] | //*[@id='HomeFeaturedProducts']") {
   has_attr("data-ur-set", "carousel")
-  has_class("NewProducts")
+  must_$(".//div[@data-ur-carousel-component='scroll_container']") {  
+    must_$("..//li[contains(@class, 'Odd') or contains(@class, 'Even')]") {
+      has_attr("data-ur-carousel-component", "item")
+    }
+  }
 }
-
