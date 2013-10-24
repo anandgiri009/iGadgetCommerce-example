@@ -1,6 +1,7 @@
 {
 	"host_map": [
     "$.igadgetcommerce.com => igadgetcommerce.com",
-		"$.igadgetcommerce.com => www.igadgetcommerce.com"
+    "$.igadgetcommerce.com => www.igadgetcommerce.com",
+		"$.mstage.igadgetcommerce.com => igadget-commerce.mybigcommerce.com"
 	]
 }
