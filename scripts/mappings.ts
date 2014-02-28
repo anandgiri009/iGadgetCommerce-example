@@ -55,15 +55,16 @@ match($status) {
           $imported = "true"
         }
         match($imported, "false") {
-        log("--> No page match in mappings.ts, it's out of scope.")
-        @import pages/out_of_scope.ts
+          log("--> No page match in mappings.ts, it's out of scope.")
+          @import pages/out_of_scope.ts
+        }
       }
-    }   
+    }
   }
 
   else() {
     # not 200 or 302 response status
-    log("--> STATUS: " $status " assuming its an error code pages/error.ts")
+    log(concat("--> STATUS: ", $status, " assuming its an error code pages/error.ts"))
     @import pages/error.ts
   }
 
