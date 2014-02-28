@@ -22,9 +22,18 @@ $("/html") {
   
   # remove_desktop_js()
   
-  @import sections/header.ts
-  @import sections/footer.ts
-
-  @import mappings.ts
+  log("Path: "+$path)
+  match($path) {
+    with(/^\/account\.php|^\/login\.php/) {
+      log("--> importing ajax.ts")
+      @import ajax.ts
+    }
+    else() {
+      @import sections/header.ts
+      @import sections/footer.ts
+      
+      @import mappings.ts
+    }
+  }
 }
 
