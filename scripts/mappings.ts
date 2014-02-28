@@ -47,18 +47,22 @@ match($status) {
         @import pages/landing.ts
       }
       else() {
+        $imported = "false"
         $("//div[@id='ProductDetails']/ancestor::html") {
           log("--> Importing product.ts - mapping on content")
           @import pages/product.ts
+          $imported = "true"
         }
-        log("--> No page match in mappings.ts")
+        match($imported, "false") {
+        log("--> No page match in mappings.ts, it's out of scope.")
+        @import pages/out_of_scope.ts
       }
     }   
   }
 
   else() {
     # not 200 or 302 response status
-    log("--> STATUS: " + $status + " assuming its an error code pages/error.ts")
+    log("--> STATUS: " $status " assuming its an error code pages/error.ts")
     @import pages/error.ts
   }
 
