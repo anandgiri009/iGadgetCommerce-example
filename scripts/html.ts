@@ -15,11 +15,7 @@ $("/html") {
 
   # Late load all the images on the site
   # lateload()
-<<<<<<< HEAD
   
-=======
-
->>>>>>> 7196b33... cleaning up images and basic stuff
   add_assets()
 
   @import optimize.ts

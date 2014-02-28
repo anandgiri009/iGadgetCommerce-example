@@ -1,6 +1,5 @@
 $('./body') {
   $(".//div[@id='Header']") {
-<<<<<<< HEAD
       # Move top menu into #Logo container
       $("./div[@id='Logo']") {
       move_here("ancestor::div[@id = 'Container']/div[@id='TopMenu']", "bottom"){
@@ -22,31 +21,16 @@ $('./body') {
      }
       insert_after("iframe", id: "mw-account-iframe", src: %account_url)
       # Fill search template
-=======
-    attribute("data-ur-set", "toggler")
-    
-      $("./div[@id='Logo']") {
-      # Move top menu into #Logo container
-      move_here("../../../div[@id='TopMenu']", "bottom"){
-        # Remove unwanted top menu items from upper menu
-        remove(".//li[not(contains(@class, 'CartLink') or contains(@class, 'First'))]")
-      }
-
-      # Insert HTML for bottom of header
-      insert_after("div", class:"mw_header_bottom") {
-        insert("div", class:"mw_search")
-        insert("div", class:"mw_menu_btn", data-ur-toggler-component: "button")
-      }
-
-      # Fill search HTML
->>>>>>> 7196b33... cleaning up images and basic stuff
       $("..//div[@class='mw_search']"){
         # Move search form into container element
         move_here("//div[@id='SearchForm']", "bottom"){
-          remove("./p")
-
+          $("./p") {
+            remove()
+          }
           $("./form") {
-            remove("./label")
+            $("./label") {
+              remove()
+            }
             # Change search button background image
             $("./input[@type='image']") {
               wrap("div", class: "mw_search_btn buttons-search")
@@ -57,20 +41,12 @@ $('./body') {
           }     
         }
       }   
-<<<<<<< HEAD
     }                       
     # Remove br
-=======
-    }
->>>>>>> 7196b33... cleaning up images and basic stuff
     remove("./br")
 
-    # Move menu items into header
+    # Move menu items into #Header
     move_here("../div[@id='Menu']", "bottom"){
-<<<<<<< HEAD
-=======
-      attribute("data-ur-toggler-component", "content")
->>>>>>> 7196b33... cleaning up images and basic stuff
       # Move "Category List" element on bottom of #Menu element
       move_here("ancestor::div[@id='Outer']//div[@id='SideCategoryList']", "bottom")
     }
