@@ -38,7 +38,7 @@ match($status) {
         log("--> Importing product.ts in mappings.ts")
         @import pages/product.ts
       }
-      with(/shop-/) {
+      with(/shop-|search/) {
         log("--> Importing category.ts in mappings.ts")
         @import pages/category.ts
       }
