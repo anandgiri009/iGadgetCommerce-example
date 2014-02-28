@@ -50,7 +50,7 @@ $("./body") {
               
               # Move page title on top of the content area
               $("./h2") {
-                move_to("../../../../div[@class='Left']", "top")
+                move_to("ancestor::div[@id = 'Wrapper']/div[@class='Left']", "top")
               } 
               
               $("./div[@class='FloatRight SortBox']") {     

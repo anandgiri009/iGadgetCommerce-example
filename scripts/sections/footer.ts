@@ -3,10 +3,10 @@ $("./body") {
     $("./p") {
       # Change current <p> tag to <div> tag
       name("div")
-          
+      
       # Wrap text childeren with span tag
       wrap_text_children("span")
-
+      
       # Insert placeholders for inserting elements
       insert("div", class: "mw_currency")
       insert("div", class: "mw_copy")
@@ -19,7 +19,7 @@ $("./body") {
       
       # Insert span with copyright text into .mw_copy container
       $("./div[@class='mw_copy']") {
-        insert("span", "Copyright 2013 iGadgetCommerce.")
+        insert("span", "Copyright 2014 iGadgetCommerce.")
       }
       
       # Insert <span> and <image> element into .mw_moovweb element
