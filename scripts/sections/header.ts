@@ -1,5 +1,4 @@
 $('./body') {
-  add_class("mw_header")
   $(".//div[@id='Header']") {
       # Move top menu into #Logo container
       $("./div[@id='Logo']") {
@@ -40,11 +39,7 @@ $('./body') {
     }                       
     # Remove br
     remove("./br")
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> 90bc4b9... demo code complete
     # Move menu items into header
     move_here("../div[@id='Menu']", "bottom"){
       # Move "Category List" element on bottom of #Menu element
