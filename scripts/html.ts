@@ -16,11 +16,12 @@ $("/html") {
   # Late load all the images on the site
   # lateload()
   
-
-
-
   add_assets()
 
+  @import optimize.ts
+  
+  # remove_desktop_js()
+  
   @import sections/header.ts
   @import sections/footer.ts
 
