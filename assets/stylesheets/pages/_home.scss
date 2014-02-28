@@ -16,17 +16,22 @@
   h2 {
     text-align: center;
     font-size: $h2_size; 
+    margin-top: 10px;
   }
   // Image Carousel Styles
   #HomeFeaturedProducts, #HomeNewProducts {
     position: relative;
     margin-bottom: 10px;
-    [data-ur-carousel-button-type="next"], [data-ur-carousel-button-type="prev"] {
-      position: absolute;
-      top: 0;
-      margin-top: -10px;
-      padding: 120px 15px;
-      background: white;
+//    [data-ur-carousel-button-type="next"], [data-ur-carousel-button-type="prev"] {
+//      position: absolute;
+//      top: 0;
+//      margin-top: -10px;
+//      padding: 120px 15px;
+//      background: white;
+//    }
+
+    [data-ur-carousel-button-type="next"], [data-ur-carousel-button-type="prev"], [data-ur-carousel-component='count'] {
+      display: none;
     }
     [data-ur-carousel-component="scroll_container"] {
       padding: 0 15px 15px 15px;
