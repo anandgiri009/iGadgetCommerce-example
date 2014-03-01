@@ -26,6 +26,16 @@ $("./body") {
           }
         }
       }
+      # logged in My Account
+      $("./div[contains(@class, 'YourAccount')]") {
+        $("./div[@class = 'BlockContent']") {
+          remove("./p")
+        }
+        remove(".//li[./a[contains(@href, 'recent_items') or contains(@href, 'wishlist')]]")
+      }
+      $(".//div[@id = 'AccountOrderStatus' or @id = 'AccountInbox' or @id = 'AccountOrders' or @id = 'ChooseShippingAddress' or @id = 'EditAccountForm']") {
+        insert_top("a", class: "mw-back-btn", href: "/account.php", "&#9668; Back to My Account")
+      }
       $(".//h2") {
         add_class("mw-h2")
       }
