@@ -1,0 +1,27 @@
+.mw-account-content {
+  padding: 10px;
+  -webkit-scrollbar { 
+    display: none; 
+  }
+  .mw-or {
+    clear: both;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  textarea, input[type="text"], input[type="password"], select {
+    width: 280px;
+  }
+  dt {
+    font-weight: bold;
+    padding-top: 5px;
+  }
+  #LoginButton {
+    float: right;
+    margin-top: 10px;
+  }
+  .mw-forgot-password-btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
